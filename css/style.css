@@ -1,0 +1,28 @@
+.tareas .diaria {
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  background: #bae913; }
+
+.tareas .semanal {
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  background: gold; }
+
+.tareas .mensual {
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  background: #a2a2f3; }
+
+.tareas .puntual {
+  width: 200px;
+  height: 150px;
+  border: 2px solid black;
+  background: #d854e9; }
+
+.tareas .borrar {
+  background: white;
+  border: 2px solid black;
+  border: none; }

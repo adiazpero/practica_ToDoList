@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+
+                <select name="filtro" id="filtro">
+                    <option value="todas">Todas</option>
+                    <option value="diaria">Diaria</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="puntual">Puntual</option>
+                </select>
+                <button onclick="buscarTarea()">Buscar</button>
+                <input type="text" id="search">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+
+                <div class="tarea">
+                    <h4>Añadir Tarea</h4>
+                    <input type="text" placeholder="Titulo" id="titulo">
+                    <textarea name="" id="descripcion" cols="30" rows="10" placeholder="descripcion"></textarea>
+                    <select name="filtro" class="tipo" id="tipo">
+                        <option value="diaria" >Diaria</option>
+                        <option value="semanal">Semanal</option>
+                        <option value="mensual">Mensual</option>
+                        <option value="puntual">Puntual</option>
+                    </select>
+
+                    <br>
+                    <button onclick="agregarTarea()">Añadir</button>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="row tareas" id="tareas">
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <script src="js/function.js"></script>
+        <script>
+            pintarTareas(arrTareas);
+        </script>
+
+</body>
+
+</html>
