@@ -6,37 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
+
 <body>
     <div class="container">
-
         <div class="row">
-            <div class="col-12">
-
-                <select name="filtro" id="filtro">
+            <div class="col-12 selector">
+                <select name="filtro" id="filtro" class="filtro">
                     <option value="todas">Todas</option>
                     <option value="diaria">Diaria</option>
                     <option value="semanal">Semanal</option>
                     <option value="mensual">Mensual</option>
                     <option value="puntual">Puntual</option>
                 </select>
-                <button onclick="buscarTarea()">Buscar</button>
-                <input type="text" id="search">
+            </div>
 
+            <div class="col-12 buscador">
+                <input type="text" id="search" class="search">
+                <button onclick="buscarTarea()"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-3">
 
-                <div class="tarea">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="agregar-tarea">
                     <h4>Añadir Tarea</h4>
-                    <input type="text" placeholder="Titulo" id="titulo">
-                    <textarea name="" id="descripcion" cols="30" rows="10" placeholder="descripcion"></textarea>
+                    <input type="text" placeholder="Titulo" id="titulo" class="titulo">
+                    <textarea name="" id="descripcion" cols="30" rows="10" placeholder="descripcion" class="texto"></textarea>
                     <select name="filtro" class="tipo" id="tipo">
                         <option value="diaria" >Diaria</option>
                         <option value="semanal">Semanal</option>
@@ -48,21 +51,20 @@
                     <button onclick="agregarTarea()">Añadir</button>
                 </div>
             </div>
-
-            <div class="col-9">
-                <div class="row tareas" id="tareas">
-
-
-
-                </div>
-            </div>
-
-
         </div>
-        <script src="js/function.js"></script>
-        <script>
-            pintarTareas(arrTareas);
-        </script>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row tareas" id="tareas"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/function.js"></script>
+    <script>
+        pintarTareas(arrTareas);
+    </script>
 
 </body>
 

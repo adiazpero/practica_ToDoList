@@ -1,28 +1,47 @@
-.tareas .diaria {
-  width: 200px;
-  height: 150px;
-  border: 2px solid black;
-  background: #bae913; }
-
-.tareas .semanal {
-  width: 200px;
-  height: 150px;
-  border: 2px solid black;
-  background: gold; }
-
-.tareas .mensual {
-  width: 200px;
-  height: 150px;
-  border: 2px solid black;
-  background: #a2a2f3; }
-
-.tareas .puntual {
-  width: 200px;
-  height: 150px;
-  border: 2px solid black;
-  background: #d854e9; }
-
-.tareas .borrar {
-  background: white;
-  border: 2px solid black;
-  border: none; }
+.container {
+  background: #f5e76b; }
+  .container .selector {
+    background: #6ab1ce;
+    height: 50px;
+    padding-top: 10px; }
+    .container .selector .filtro {
+      width: 30%;
+      height: 30px; }
+  .container .buscador {
+    background: #ffc04a;
+    padding: 15px; }
+    .container .buscador .search {
+      border-radius: 2px;
+      width: 80%; }
+  .container .agregar-tarea {
+    margin-top: 20px;
+    margin-bottom: 10px; }
+    .container .agregar-tarea .titulo {
+      width: 100%; }
+    .container .agregar-tarea .texto {
+      width: 100%; }
+    .container .agregar-tarea .tipo {
+      margin-bottom: 10px; }
+  .container .tareas {
+    margin: 5px 5px; }
+    .container .tareas .diaria {
+      border: 1px solid black;
+      background: rgba(134, 245, 100, 0.993); }
+    .container .tareas .semanal {
+      height: 150px;
+      border: 1px solid black;
+      background: #ffdb0f; }
+    .container .tareas .mensual {
+      width: 100%;
+      height: 150px;
+      border: 1px solid black;
+      background: #a2a2f3; }
+    .container .tareas .puntual {
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      background: #eeaaf7; }
+    .container .tareas .borrar {
+      background: white;
+      border: 2px solid black;
+      border: none; }
