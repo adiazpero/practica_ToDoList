@@ -1,7 +1,7 @@
-.container {
+.container-fluid {
     background: rgb(245, 231, 107);
     .selector {
-        background: rgb(106, 177, 206);
+        background: rgb(148, 190, 207);
         height: 50px;
         padding-top: 10px;
         .filtro {
@@ -10,7 +10,7 @@
         }
     }
     .buscador {
-        background: rgb(255, 192, 74);
+        background: rgb(248, 200, 110);
         padding: 15px;
         .search {
             border-radius: 2px;
@@ -34,12 +34,12 @@
         margin: 5px 5px;
         .diaria {
             border: 1px solid black;
-            background: rgba(134, 245, 100, 0.993);
+            background: rgba(169, 243, 147, 0.993);
         }
         .semanal {
             height: 150px;
             border: 1px solid black;
-            background: rgb(255, 219, 15);
+            background: rgb(248, 223, 83);
         }
         .mensual {
             width: 100%;

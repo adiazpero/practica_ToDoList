@@ -39,7 +39,7 @@ var idTarea = arrTareas.length;
 function pintarTareas(listaTareas) {
     limpiarPantalla();
     for (var i = 0; i < listaTareas.length; i++) {
-        document.getElementById('tareas').innerHTML += `<div class="col-12 ${listaTareas[i].tipo}"><p id="titulo">${listaTareas[i].titulo}</p><p id="descripcion">${listaTareas[i].descripcion}</p><button class="borrar" onclick="eliminarTarea(${listaTareas[i].id})">Eliminar</button></div>`;
+        document.getElementById('tareas').innerHTML += `<div class="col-12 col-lg-3 ${listaTareas[i].tipo}"><p id="titulo">${listaTareas[i].titulo}</p><p id="descripcion">${listaTareas[i].descripcion}</p><button class="borrar" onclick="eliminarTarea(${listaTareas[i].id})">Eliminar</button></div>`;
     }
 }
 
@@ -107,8 +107,4 @@ function buscarTarea() {
         pintarTareas(resultadoBusqueda);
 
     }
-
-
-
-
 }
